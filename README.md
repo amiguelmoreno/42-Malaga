@@ -34,7 +34,7 @@
 
 | Project | Rank | Score |
 | ------ | ------ | ------ |
-| [Libft](https://github.com/amiguelmoreno/Libft) | 0 | ![antmoren's 42 Libft Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2580818)) |
+| [Libft](https://github.com/amiguelmoreno/Libft) | 0 | ![antmoren's 42 Libft Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2580818) |
 | [Born2beRoot](https://github.com/amiguelmoreno/minitalkBorn2beroot) | 1 | ![antmoren's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2587449) |
 | [ft_printf](https://github.com/amiguelmoreno/ft_printf) | 1 | ![antmoren's 42 ft_printf Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2601320) |
 | [get_next_line](https://github.com/amiguelmoreno/get_next_line) | 1 | ![antmoren's 42 get_next_line Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2589614) |
