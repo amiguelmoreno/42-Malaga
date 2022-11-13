@@ -6,90 +6,52 @@
 /*   By: antmoren <antmoren@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:38:38 by antmoren          #+#    #+#             */
-/*   Updated: 2022/06/22 20:26:35 by antmoren         ###   ########.fr       */
+/*   Updated: 2022/11/11 22:12:47 by antmoren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf/includes/ft_printf.h"
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include "minitalk.h"
 
-#define RED "\033[0;31m"
-#define GREEN "\033[0;32m"
-#define YELLOW "\033[0;33m"
-#define END "\033[0m"
-
-void	signal_error(void)
+static void	handler(int signal)
 {
-	ft_printf("\n%sserver: unexpected error.%s\n", RED, END);
-	exit(EXIT_FAILURE);
-}
+	static char	c = 0;
+	static int	pos = 0;
+	int			bit;
 
-void	extended_action(char *c, int *received, int *client_pid, int *bit)
-{
-	ft_printf("%c", *c);
-	if (*c == '\0')
-	{
-		ft_printf("\n%s%d signal recieved from client PID: %d%s\n",
-					GREEN,
-					*received,
-					*client_pid,
-					END);
-		*received = 0;
-		*c = 0;
-		if (kill(*client_pid, SIGUSR1) == -1)
-			signal_error();
-		return ;
-	}
-	*bit = 0;
-}
-
-void	action(int sig, siginfo_t *info, void *context)
-{
-	static int	client_pid;
-	static int	bit;
-	static char	c;
-	static int	received;
-	static int	current_pid;
-
-	(void)context;
-	if (!client_pid)
-		client_pid = info->si_pid;
-	current_pid = info->si_pid;
-	if (client_pid != current_pid)
-	{
-		client_pid = current_pid;
+	if (signal == SIGUSR1)
 		bit = 0;
+	else if (signal == SIGUSR2)
+		bit = 1;
+	else
+		exit(EXIT_FAILURE);
+	c += bit << pos++;
+	if (pos == 7)
+	{
+		if (!c)
+			c = '\n';
+		ft_putchar_fd(c, 1);
 		c = 0;
-		received = 0;
+		pos = 0;
 	}
-	c |= (sig == SIGUSR2);
-	received++;
-	bit++;
-	if (bit == 8)
-		extended_action(&c, &received, &client_pid, &bit);
-	c <<= 1;
-	usleep(100);
-	kill(client_pid, SIGUSR2);
+}
+
+static void	set_handlers(void)
+{
+	struct sigaction	act;
+
+	act.sa_handler = handler;
+	sigemptyset(&act.sa_mask);
+	act.sa_flags = 0;
+	sigaction(SIGUSR1, &act, NULL);
+	sigaction(SIGUSR2, &act, NULL);
 }
 
 int	main(void)
 {
-	int					pid;
-	struct sigaction	act;
-
-	pid = getpid();
-	ft_printf("Server pid: %d\n", pid);
-	act.sa_sigaction = action;
-	sigemptyset(&act.sa_mask);
-	act.sa_flags = SA_SIGINFO;
-	while (1)
-	{
-		sigaction(SIGUSR1, &act, 0);
-		sigaction(SIGUSR2, &act, 0);
+	set_handlers();
+	ft_putstr_fd("Server running: PID: ", 1);
+	ft_putnbr_fd(getpid(), 1);
+	ft_putstr_fd("\n", 1);
+	while (42)
 		pause();
-	}
-	return (EXIT_FAILURE);
 }
