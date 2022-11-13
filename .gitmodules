@@ -1,0 +1,12 @@
+[submodule "minitalk"]
+	path = minitalk
+	url = https://github.com/amiguelmoreno/minitalk
+[submodule "Born2beroot"]
+	path = Born2beroot
+	url = https://github.com/amiguelmoreno/Born2beroot
+[submodule "Libft"]
+	path = Libft
+	url = https://github.com/amiguelmoreno/Libft
+[submodule "get_next_line"]
+	path = get_next_line
+	url = https://github.com/amiguelmoreno/get_next_line
