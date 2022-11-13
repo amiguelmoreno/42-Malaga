@@ -5,6 +5,12 @@
   </a>
   <br />
   <br />
+  <p align="center">
+    <a href="#">
+      <img src="https://skillicons.dev/icons?i=vscode,c,vim,git,github" />
+    </a>
+  </p> 
+  <br />
   <h1>42 Malaga</h1>
   <br />
 </div>
