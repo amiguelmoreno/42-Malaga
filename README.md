@@ -34,11 +34,10 @@
 
 | Project | Rank | Score |
 | ------ | ------ | ------ |
-| [Libft](https://github.com/pvaladares/42cursus-00-Libft) | 0 | [![antmoren's 42 minitalk Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2617179)](https://github.com/JaeSeoKim/badge42) |
-| [Born2beRoot](https://github.com/pvaladares/42cursus-01-Born2BeRoot) | 1 | ![pvaladar's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/cl34ggaad004009jmq2lkluen/project/2528405) |
-| [ft_printf](https://github.com/pvaladares/42cursus-01-ft_printf) | 1 | ![pvaladar's 42 ft_printf Score](https://badge42.vercel.app/api/v2/cl34ggaad004009jmq2lkluen/project/2528591) |
-| [get_next_line](https://github.com/pvaladares/42cursus-01-get_next_line) | 1 | ![pvaladar's 42 get_next_line Score](https://badge42.vercel.app/api/v2/cl34ggaad004009jmq2lkluen/project/2528592) |
-| [minitalk](https://github.com/pvaladares/42cursus-02-minitalk) | 2 | [![antmoren's 42 minitalk Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2617179)](https://github.com/JaeSeoKim/badge42)
-| [fract-ol]() | 2 | ![pvaladar's 42 fract-ol Score](https://badge42.vercel.app/api/v2/cl34ggaad004009jmq2lkluen/project/2681439)
-| [push_swap](https://github.com/pvaladares/42cursus-02-push_swap) | 2 | ![pvaladar's 42 push_swap Score](https://badge42.vercel.app/api/v2/cl34ggaad004009jmq2lkluen/project/2630765)
+| [Libft](https://github.com/amiguelmoreno/Libft) | 0 | ![antmoren's 42 Libft Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2580818)) |
+| [Born2beRoot](https://github.com/amiguelmoreno/minitalkBorn2beroot) | 1 | ![antmoren's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2587449) |
+| [ft_printf](https://github.com/amiguelmoreno/ft_printf) | 1 | ![antmoren's 42 ft_printf Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2601320) |
+| [get_next_line](https://github.com/amiguelmoreno/get_next_line) | 1 | ![antmoren's 42 get_next_line Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2589614) |
+| [minitalk](https://github.com/amiguelmoreno/minitalk) | 2 | ![antmoren's 42 minitalk Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2617179)
+| [push_swap](https://github.com/pvaladares/42cursus-02-push_swap) | 2 | ![antmoren's 42 push_swap Score](https://badge42.vercel.app/api/v2/cl47airxk008409law51ifuyg/project/2616456)
 
