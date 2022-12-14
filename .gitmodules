@@ -13,3 +13,6 @@
 [submodule "ft_printf"]
 	path = ft_printf
 	url = https://github.com/amiguelmoreno/ft_printf
+[submodule "push-swap"]
+	path = push-swap
+	url = https://github.com/amiguelmoreno/push-swap
