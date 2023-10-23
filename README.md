@@ -29,7 +29,7 @@
 | Project | Rank |
 | ------ | ------ |
 | [Libft](https://github.com/amiguelmoreno/Libft) | 0 |
-| [Born2beRoot](https://github.com/amiguelmoreno/minitalkBorn2beroot) | 1 |
+| [Born2beRoot](https://github.com/amiguelmoreno/Born2beroot) | 1 |
 | [ft_printf](https://github.com/amiguelmoreno/ft_printf) | 1 |
 | [get_next_line](https://github.com/amiguelmoreno/get_next_line) | 1 |
 | [minitalk](https://github.com/amiguelmoreno/minitalk) | 2 |
