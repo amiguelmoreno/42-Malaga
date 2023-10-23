@@ -30,7 +30,7 @@
 
 <br />
 
-## 42 Projects Score
+## 42 Projects
 
 | Project | Rank |
 | ------ | ------ |
