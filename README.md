@@ -35,6 +35,6 @@
 | [minitalk](https://github.com/amiguelmoreno/minitalk) | 2 |
 | [push_swap](https://github.com/amiguelmoreno/push-swap) | 2 |
 | [so_long](https://github.com/amiguelmoreno/push-swap) | 2 |
-| [Philosophers](https://github.com/amiguelmoreno/push-swap) | 2 |
+| [Philosophers](https://github.com/amiguelmoreno/push-swap) | 3 |
 
 
