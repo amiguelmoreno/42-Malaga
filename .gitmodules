@@ -16,3 +16,6 @@
 [submodule "push-swap"]
 	path = push-swap
 	url = https://github.com/amiguelmoreno/push-swap
+[submodule "so_long"]
+	path = so_long
+	url = https://github.com/amiguelmoreno/so_long
